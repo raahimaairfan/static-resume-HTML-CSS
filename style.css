@@ -1,0 +1,179 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f2f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Main Resume Section */
+.resume-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Section containing all the content */
+.main-section {
+  max-width: 700px;
+  width: 100%;
+  border: 2px solid #ff7f50; /* Border around all sections */
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* Section Container Styling (For individual sections) */
+.container {
+  border: 1px solid #ff7f50; /* Border around each section */
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+/* Profile Picture Styling */
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto; /* Center horizontally */
+  display: block; /* Ensure it behaves as a block element */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Header Section */
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* Section Heading */
+.section-heading {
+  font-size: 22px;
+  color: #ff7f50;
+  margin: 15px 0 10px;
+  border-bottom: 2px solid #ff7f50;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* Text Styling */
+p {
+  color: #555555;
+  line-height: 1.6;
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+strong {
+  color: #333333;
+}
+
+/* Skills Section */
+#toggle-skills {
+  background-color: #ff7f50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+#toggle-skills:hover {
+  background-color: #ff6347;
+}
+
+#skills-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: none;
+}
+
+#skills-list li {
+  background-color: #eef2f7;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 6px 0;
+  color: #333333;
+  font-weight: 20;
+}
+
+/* Work Experience Section */
+ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+/* Projects and Certifications Sections */
+.projects ul, .certifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projects li, .certifications li {
+  margin: 6px 0;
+  color: #555555;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 480px) {
+  .main-section {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  #toggle-skills {
+    padding: 6px 12px;
+  }
+}
+
+/* Contact Info Styling */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0; /* Reduced margin between each item */
+  padding: 0 46px; /* Added padding of 10px on both sides */
+}
+
+.contact-item strong {
+  color: #333333;
+  font-weight: 600;
+}
+
+.contact-item span {
+  color: #555555;
+  font-weight: 500;
+}
